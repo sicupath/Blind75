@@ -1,13 +1,12 @@
 class Solution {
 public:
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
-        map<vector<char>, vector<string>> groups;
+        map<map<char,int>, vector<string>> groups;
         for(int i=0; i<strs.size(); i++){
-            vector<char> letters;
+            map<char,int> letters;
             for(int j=0; j<strs[i].size(); j++){
-                letters.push_back(strs[i][j]);
+                letters[strs[i][j]]++;
             }
-            sort(letters.begin(), letters.end());
             groups[letters].push_back(strs[i]);
         }
         vector<vector<string>> res;
@@ -17,3 +16,8 @@ public:
         return res;
     }
 };
+
+/*
+TC: O(mn)
+MC: O(mn)
+*/
