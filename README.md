@@ -10,3 +10,6 @@ Blind 75 leetcode is a list of 75 most frequent asked leetcode questions which h
 
 ### String
 - Valid Parentheses
+
+### Others
+- Longest Common Prefix
