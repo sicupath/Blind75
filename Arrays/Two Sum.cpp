@@ -1,28 +1,27 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        vector<int> mv;
-        map<int, int> m;
-        m.clear();
+        vector<int> res;
+        map<int, int> hash;
         for(int i=0;i<nums.size();i++){
-            if(m[target-nums[i]]!=0){
-                mv.push_back(m[target-nums[i]]-1);
-                mv.push_back(i);
-                return mv;
+            if(hash[target-nums[i]]!=0){
+                res.push_back(hash[target-nums[i]]-1);
+                res.push_back(i);
+                return res;
             }else{
-                m[nums[i]]=i+1;
+                hash[nums[i]]=i+1;
             }
         }
-        return mv;
+        return res;
     }
 };
 
 /*
-Naive Sol
-TC: O(n^2)
-MC: O(1)
+NAIVE
+Time: O(n^2)
+Memory: O(1)
 
 Hash Table
-TC: O(n)
-MC: O(n)
+Time: O(n)
+Memory: O(n)
 */
