@@ -11,3 +11,9 @@ public:
         return false;
     }
 };
+
+/*
+The idea is improve time complexity compared to sorting O(nlogn)
+by doing a tradeoff of memory, we will use a hash map O(n) and then
+iterate through it in O(n)
+*/
