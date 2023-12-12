@@ -18,6 +18,8 @@ public:
 };
 
 /*
-TC: O(mn)
-MC: O(mn)
+We have to store groups and for the key instead of sorting in O(nlong) we use
+the array of letters that is O(n) and is convenient for memory also
+Time: O(mn)
+Memory: O(mn)
 */
