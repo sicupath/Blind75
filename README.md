@@ -3,7 +3,7 @@ Leetcode
 
 Blind 75 leetcode is a list of 75 most frequent asked leetcode questions which had helped many developers clear interviews.
 
-### Array
+### Arrays & Hashing
 - Contains Duplicate
 - Valid Anagram
 - Two Sum
@@ -11,6 +11,9 @@ Blind 75 leetcode is a list of 75 most frequent asked leetcode questions which h
 
 ### Two Pointers
 - Valid Palindrome
+
+### Sliding Window
+- Best Time to Buy and Sell Stock
   
 ### Stack
 - Valid Parentheses
