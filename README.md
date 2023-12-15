@@ -9,7 +9,10 @@ Blind 75 leetcode is a list of 75 most frequent asked leetcode questions which h
 - Two Sum
 - Group Anagrams
 
-### String
+### Two Pointers
+- Valid Palindrome
+  
+### Stack
 - Valid Parentheses
 
 ### Others
