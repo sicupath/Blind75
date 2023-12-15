@@ -1,0 +1,23 @@
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int i = 0, j = 1, maxProfit = 0, profit;
+        while(j < prices.size()){
+            profit = prices[j] - prices[i];
+            maxProfit = max(maxProfit, profit);
+            if(profit < 0){
+                i = j;
+            }
+            j++;
+        }
+        return maxProfit;
+    }
+};
+
+/*
+La idea es una sliding window tal que vamos aumentando j (derecho) y comparando profits 
+pero si el profit es negativo entonces actualizamos i (izquierdo) a esta j porque entonces hemos 
+encontrado un buy day mejor
+Time: O(n)
+Memory: O(1)
+*/
