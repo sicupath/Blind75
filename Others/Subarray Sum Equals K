@@ -1,0 +1,29 @@
+class Solution {
+public:
+    int subarraySum(vector<int>& nums, int k) {
+        int acum = 0, res = 0;
+        map<int,int> hash;
+        hash[0] = 1;
+        for(int i=0; i<nums.size(); i++){
+           acum += nums[i];
+           res += hash[acum-k];
+           hash[acum]++;
+        }
+        return res;
+    }
+};
+
+/*
+
+Brute force would be O(n^2) but memory O(1)
+
+Now, the hash stores the number of acumulated sums with a some value that is the key
+So when we get sume acum value we are interested in x with acum-x=k so x=acum-k
+We look in the hash for the number of previous acum sums with value x
+Also we have to be careful of updating the hash after the search because we dont want to
+take into account void subsets for k=0
+
+Time: O(n)
+Memory: O(n)
+
+*/
