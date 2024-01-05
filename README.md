@@ -8,6 +8,7 @@ Blind 75 leetcode is a list of 75 most frequent asked leetcode questions which h
 - Valid Anagram
 - Two Sum
 - Group Anagrams
+- Top K Frequent Elements
 
 ### Two Pointers
 - Valid Palindrome
